@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ezequiel Duarte | Chef Privado</title>
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">
+        <i class="fas fa-utensils" aria-hidden="true"></i>Chef<span>Duarte</span>
+      </a>
+
+      <!-- Toggle (Hamburguesa) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-controls="primaryNav" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- Nav -->
+      <nav id="primaryNav" class="nav">
+        <ul class="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#social">Redes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="particles" id="particles" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-tagline"><i class="fas fa-star" aria-hidden="true"></i> Chef Privado & Contenido Fitness</span>
+          <h1 class="hero-title">Transformando <span>experiencias</span> a través de la cocina</h1>
+          <p class="hero-subtitle">
+            Servicios culinarios personalizados para streamers, equipos profesionales de esports y clientes exclusivos.
+            Combinando gastronomía, fitness y estilo de vida en cada creación.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+              <div class="stat-text">
+                <h3>47.8K</h3>
+                <p>Seguidores</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fas fa-utensils" aria-hidden="true"></i></div>
+              <div class="stat-text">
+                <h3>221+</h3>
+                <p>Creaciones</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div>
+              <div class="stat-text">
+                <h3>15+</h3>
+                <p>Equipos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <a href="#contacto" class="btn"><i class="fas fa-calendar-check" aria-hidden="true"></i> Contratar Servicios</a>
+            <a href="https://www.instagram.com/ezequielduartte_/" target="_blank" class="btn btn-outline" rel="noopener"> <i class="fab fa-instagram" aria-hidden="true"></i> Ver Instagram</a>
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <div class="hero-image">
+            <img src="perfil.jpg" alt="Retrato de Ezequiel Duarte en cocina" class="hero-img"/>
+            <div class="hero-image-content">
+              <i class="fas fa-user-chef" aria-hidden="true"></i>
+              <h3>Ezequiel Duarte</h3>
+              <p>Cocinero Privado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="floating floating-1" aria-hidden="true"></div>
+    <div class="floating floating-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-title">
+        <h2>Servicios Exclusivos</h2>
+        <p>Experiencia culinaria personalizada para necesidades específicas de alto rendimiento</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon"><i class="fas fa-crown" aria-hidden="true"></i></div>
+          <h3>Chef Privado</h3>
+          <p>Servicio culinario exclusivo en tu hogar o espacio de trabajo con menús personalizados según tus preferencias y necesidades dietéticas.</p>
+          <a href="#contacto" class="btn btn-outline"><i class="fas fa-info-circle" aria-hidden="true"></i> Más Información</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
+          <h3>Chef para Streamers</h3>
+          <p>Servicio para creadores de contenido durante transmisiones en vivo, con platos diseñados para lucir increíbles en cámara.</p>
+          <a href="#contacto" class="btn btn-outline"><i class="fas fa-info-circle" aria-hidden="true"></i> Más Información</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+          <h3>Equipos Profesionales</h3>
+          <p>Alimentación estratégica para equipos de esports en entrenamientos y competiciones, optimizada para rendimiento mental y físico.</p>
+          <a href="#contacto" class="btn btn-outline"><i class="fas fa-info-circle" aria-hidden="true"></i> Más Información</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fas fa-dumbbell" aria-hidden="true"></i></div>
+          <h3>Cocina Fitness</h3>
+          <p>Platos gourmet diseñados para objetivos deportivos específicos, combinando nutrición óptima con sabor excepcional.</p>
+          <a href="#contacto" class="btn btn-outline"><i class="fas fa-info-circle" aria-hidden="true"></i> Más Información</a>
+        </article>
+      </div>
+    </div>
+    <div class="floating floating-1" aria-hidden="true"></div>
+    <div class="floating floating-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients" id="clientes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experiencia con Clientes</h2>
+        <p>Trabajando con algunos de los nombres más reconocidos en streaming y esports</p>
+      </div>
+
+      <div class="clients-grid">
+        <article class="client-card">
+          <div class="client-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
+          <h3>Streamers Top</h3>
+          <p>Soporte culinario en transmisiones con miles de espectadores en simultáneo.</p>
+        </article>
+
+        <article class="client-card">
+          <div class="client-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+          <h3>Equipos Campeones</h3>
+          <p>Nutrición para equipos con historial ganador en torneos internacionales.</p>
+        </article>
+
+        <article class="client-card">
+          <div class="client-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+          <h3>Influencers Fitness</h3>
+          <p>Platos a medida para creadores especializados en deporte y bienestar.</p>
+        </article>
+
+        <article class="client-card">
+          <div class="client-icon"><i class="fas fa-calendar-star" aria-hidden="true"></i></div>
+          <h3>Eventos Exclusivos</h3>
+          <p>Catering para lanzamientos de producto y encuentros privados.</p>
+        </article>
+      </div>
+
+      <blockquote class="quote">"La obsesión vence al talento" — Filosofía que guía cada creación culinaria</blockquote>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="section-title">
+        <h2>Creaciones Destacadas</h2>
+        <p>Una selección de platos emblemáticos y experiencias gastronómicas</p>
+      </div>
+
+      <div class="gallery-container">
+        <figure class="gallery-item">
+          <img src="desayuno-fitness.jpg" alt="Desayuno fitness con frutas y avena"/>
+          <figcaption class="gallery-item-content">
+            <h3>Desayuno Fitness</h3><p>Para atletas de alto rendimiento</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="fideos.jpg" alt="Pasta artesanal con salsa italiana"/>
+          <figcaption class="gallery-item-content">
+            <h3>Especialidad Italiana</h3><p>Preparado en streaming</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="pizza-artesanal.jpg" alt="Pizza artesanal horneada a la piedra"/>
+          <figcaption class="gallery-item-content">
+            <h3>Pizza Artesanal</h3><p>Para equipo profesional</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="cena-especial.jpg" alt="Plato principal de cena privada"/>
+          <figcaption class="gallery-item-content">
+            <h3>Plato Principal</h3><p>Cena privada</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="postre.jpg" alt="Postre gourmet decorado con frutas"/>
+          <figcaption class="gallery-item-content">
+            <h3>Postre Gourmet</h3><p>Evento especial</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="mesa.jpg" alt="Mesa completa con varios platos gourmet"/>
+          <figcaption class="gallery-item-content">
+            <h3>Cena Completa</h3><p>Experiencia personalizada</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="floating floating-1" aria-hidden="true"></div>
+    <div class="floating floating-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- Social -->
+  <section class="social" id="social">
+    <div class="container">
+      <div class="social-content">
+        <div class="social-text">
+          <h2>Contenido en <span>Redes Sociales</span></h2>
+          <p>Compartiendo mi pasión por la cocina, el fitness y el estilo de vida con contenido que inspira a miles de seguidores.</p>
+          <p>Conéctate para ver detrás de escenas, recetas exclusivas y momentos únicos con clientes.</p>
+
+          <div class="social-stats">
+            <div class="social-stat"><h3>221+</h3><p>Publicaciones</p></div>
+            <div class="social-stat"><h3>47.8K</h3><p>Instagram</p></div>
+            <div class="social-stat"><h3>15K+</h3><p>TikTok</p></div>
+          </div>
+
+          <div class="btn-group">
+            <a href="https://www.instagram.com/ezequielduartte_/" target="_blank" class="btn" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i> Seguir en Instagram</a>
+            <a href="https://www.tiktok.com/@ezequielduartte1" target="_blank" class="btn btn-outline" rel="noopener"><i class="fab fa-tiktok" aria-hidden="true"></i> Seguir en TikTok</a>
+          </div>
+        </div>
+
+        <div class="social-images">
+          <div class="social-image">
+            <img src="perfil.jpg" alt="Ezequiel creando contenido para Instagram"/>
+            <div class="social-badge"><i class="fas fa-heart" aria-hidden="true"></i> 2.4K</div>
+          </div>
+          <div class="social-image">
+            <img src="deporte.jpg" alt="Preparación fitness y entrenamiento"/>
+          </div>
+          <div class="social-image">
+            <img src="linktree.jpg" alt="Acceso a todos los enlaces de Ezequiel"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>¿Listo para una <span>experiencia</span> culinaria única?</h2>
+          <p>Contáctame para diseñar menús que se adapten perfectamente a tus necesidades y eventos.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <a href="mailto:zentylcontact@gmail.com">zentylcontact@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+              <div class="contact-text">
+                <h4>Instagram</h4>
+                <a target="_blank" href="https://www.instagram.com/ezequielduartte_/" rel="noopener">@ezequielduartte_</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-tiktok" aria-hidden="true"></i></div>
+              <div class="contact-text">
+                <h4>TikTok</h4>
+                <a target="_blank" href="https://www.tiktok.com/@ezequielduartte1" rel="noopener">@ezequielduartte1</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-link" aria-hidden="true"></i></div>
+              <div class="contact-text">
+                <h4>Enlaces</h4>
+                <a target="_blank" href="https://linktr.ee/ezequielduartecocina" rel="noopener">Todos mis enlaces</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <a href="https://www.instagram.com/ezequielduartte_/" target="_blank" class="btn" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+            <a href="https://www.tiktok.com/@ezequielduartte1" target="_blank" class="btn btn-outline" rel="noopener"><i class="fab fa-tiktok" aria-hidden="true"></i> TikTok</a>
+          </div>
+        </div>
+
+        <div class="contact-form card-animate">
+          <h3>Solicitar Servicio</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone"/>
+            </div>
+            <div class="form-group">
+              <label for="service">Tipo de servicio</label>
+              <input type="text" id="service" name="service" placeholder="Privado, Streaming, Equipo, etc."/>
+            </div>
+            <div class="form-group">
+              <label for="message">Tu mensaje</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn"><i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar Solicitud</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="floating floating-1" aria-hidden="true"></div>
+    <div class="floating floating-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Chef Ezequiel Duarte</h3>
+          <p>Servicios de cocinero privado especializado en streamers, equipos de esports y clientes exclusivos. Gastronomía, fitness y lifestyle para crear experiencias únicas.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/ezequielduartte_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@ezequielduartte1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:zentylcontact@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linktr.ee/ezequielduartecocina" target="_blank" rel="noopener" aria-label="Linktree"><i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios"><i class="fas fa-arrow-right"></i> Chef Privado</a></li>
+            <li><a href="#servicios"><i class="fas fa-arrow-right"></i> Servicio para Streamers</a></li>
+            <li><a href="#servicios"><i class="fas fa-arrow-right"></i> Equipos de Esports</a></li>
+            <li><a href="#servicios"><i class="fas fa-arrow-right"></i> Cocina Fitness</a></li>
+            <li><a href="#contacto"><i class="fas fa-arrow-right"></i> Eventos Especiales</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-links">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="#inicio"><i class="fas fa-arrow-right"></i> Inicio</a></li>
+            <li><a href="#servicios"><i class="fas fa-arrow-right"></i> Servicios</a></li>
+            <li><a href="#clientes"><i class="fas fa-arrow-right"></i> Clientes</a></li>
+            <li><a href="#galeria"><i class="fas fa-arrow-right"></i> Galería</a></li>
+            <li><a href="#social"><i class="fas fa-arrow-right"></i> Redes</a></li>
+            <li><a href="#contacto"><i class="fas fa-arrow-right"></i> Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-links">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:zentylcontact@gmail.com"><i class="fas fa-envelope"></i> zentylcontact@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/ezequielduartte_/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> @ezequielduartte_</a></li>
+            <li><a href="https://www.tiktok.com/@ezequielduartte1" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> @ezequielduartte1</a></li>
+            <li><a href="https://linktr.ee/ezequielduartecocina" target="_blank" rel="noopener"><i class="fas fa-link"></i> Enlaces importantes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Ezequiel Duarte. Todos los derechos reservados. | "La obsesión vence al talento"</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
