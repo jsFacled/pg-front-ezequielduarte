@@ -96,6 +96,15 @@ header {
 .logo i { margin-right: 10px; font-size: 1.8rem; transition: var(--transition); }
 .logo:hover { transform: scale(1.05); }
 .logo:hover span { color: var(--accent); }
+.logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;   /* lo hace redondo */
+  object-fit: cover;    /* recorta sin deformar */
+  margin-right: 10px;   /* espacio antes del texto */
+  border: 2px solid var(--accent); /* opcional, borde verde */
+}
+
 
 /* Nav Desktop */
 .nav { }
@@ -186,7 +195,7 @@ header {
 
 
 .hero-image:hover { transform: rotateY(0) rotateX(0); }
-.hero-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+.hero-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
 .hero-image-content { position: absolute; text-align: center; padding: 40px; color: white; z-index: 2; }
 .hero-image-content i { font-size: 6rem; margin-bottom: 20px; color: var(--accent-light); text-shadow: 0 5px 15px rgba(0,0,0,.3); }
 .hero-image-content h3 { font-size: 2.4rem; margin-bottom: 8px; }
