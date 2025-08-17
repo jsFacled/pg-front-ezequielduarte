@@ -49,10 +49,12 @@ function initScrollAnimations() {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
 
-      if (entry.target.classList.contains('service-card') ||
-          entry.target.classList.contains('gallery-item') ||
-          entry.target.classList.contains('contact-form') ||
-          entry.target.classList.contains('card-animate')) {
+      if (
+        entry.target.classList.contains('service-card') ||
+        entry.target.classList.contains('gallery-item') ||
+        entry.target.classList.contains('contact-form') ||
+        entry.target.classList.contains('card-animate')
+      ) {
         entry.target.style.transform = 'translateY(0)';
         entry.target.style.opacity = '1';
         observer.unobserve(entry.target);
@@ -60,7 +62,9 @@ function initScrollAnimations() {
     });
   }, { threshold: 0.12 });
 
-  document.querySelectorAll('.service-card, .gallery-item, .contact-form, .card-animate').forEach(el => observer.observe(el));
+  document
+    .querySelectorAll('.service-card, .gallery-item, .contact-form, .card-animate')
+    .forEach(el => observer.observe(el));
 }
 
 // Simple form submission UX
@@ -108,8 +112,58 @@ if (navToggle && navMenu) {
   });
 }
 
+/* ==========
+   EFECTO DE ESCRITURA PARA EL QUOTE
+   Requiere en el HTML:
+   <blockquote id="brandQuote" class="quote" data-text="..."></blockquote>
+   Y en CSS las clases .quote.is-visible, .quote-text y .quote-caret
+========== */
+function initQuoteTyping() {
+  const q = document.getElementById('brandQuote');
+  if (!q) return;
+
+  const fullText = (q.dataset.text || q.textContent || '').trim();
+  q.textContent = ''; // limpiar contenido inicial
+
+  const spanText = document.createElement('span');
+  spanText.className = 'quote-text';
+  const caret = document.createElement('span');
+  caret.className = 'quote-caret';
+  q.append(spanText, caret);
+
+  let i = 0;
+  const base = 28; // velocidad base (ms/caracter)
+
+  function typeNext() {
+    if (i < fullText.length) {
+      spanText.textContent += fullText.charAt(i);
+      i++;
+      const ch = fullText.charAt(i - 1);
+      const delay = (ch === ' ' || ch === '—' || ch === ',') ? base * 1.6 : base;
+      setTimeout(typeNext, delay);
+    } else {
+      caret.remove(); // quitar caret al terminar
+    }
+  }
+
+  let started = false;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting && !started) {
+        started = true;
+        q.classList.add('is-visible'); // activa la transición de entrada
+        typeNext();
+        io.disconnect();
+      }
+    });
+  }, { threshold: 0.35 });
+
+  io.observe(q);
+}
+
 // Init
 window.addEventListener('DOMContentLoaded', () => {
   createParticles();
   initScrollAnimations();
+  initQuoteTyping(); // <- añade el efecto de escritura del quote
 });
